@@ -1,0 +1,33 @@
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<main>
+
+		<h1>Url Shortener!</h1>
+
+		<h2>User Stories</h2>
+			<p> I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.  When I visit that shortened URL, it will redirect me to my original link.  </p>
+		<h2> Example Creation Usage: </h2>
+		<ul>
+			<li>https://little-url.herokuapp.com/new/https://www.google.com </li>
+			<li>https://little-url.herokuapp.com/new/http://foo.com:80</li>
+		</ul>
+		<h2> Example Creation Output: </h2>
+			<ul>
+				<li>{ "original_url":"http://foo.com:80", "short_url":"https://little-url.herokuapp.com/8170" }
+</li>
+			</ul>
+		<h2> Example Usage: </h2>
+			<ul>
+				<li> https://little-url.herokuapp.com/2871 </li>	
+			</ul>
+		<h2> Redirects To: </h2>
+			<ul>
+				<li>https://www.google.com/</li>	
+			</ul>
+
+	</main>
+</html>
